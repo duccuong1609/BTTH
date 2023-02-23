@@ -7,6 +7,18 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
     <title>Document</title>
+    <style>       
+        #abc{
+            display: block;
+        }
+        .text-italic{
+            font-style: italic;
+            font-weight: bold;
+        }
+        .text-bold{
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +55,178 @@
     <a href="Main Courses.html">Main Courses</a>
     <a href="Desserts.html">Desserts</a>
     <h1>Linking and Navigation</h1>
-
+    <p>This page covers the following topics :</p>
+    <ul type=".">
+        <li>
+            <a href = "URLs.html">URLs</a>
+        </li>
+        <li>
+            <a href = "SourceAnchors.html">Source Anchors</a>
+        </li>
+        <li>
+            <a href="SourceAnchors.html">Destination Anchors</a>
+        </li>
+        <li>
+            <a href="URLs.html">Example</a>
+        </li>
+    </ul>
+<!--Bài 6.Sử dụng các tag liên quan đến <TABLE>
+a.-->
+    <table class="tableStyle" border="2" cellpadding="10">
+        <tr>
+            <td>1</td>
+            <td colspan="4" align="center">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td bgcolor="#ff6600">4</td>
+            <td bgcolor="#ff6600">5</td>
+            <td colspan="2" rowspan="2" align="center" bgcolor="yellow">6</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ff6600">7</td>
+            <td bgcolor="#ff6600">8</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" bgcolor="yellow">9</td>
+            <td colspan="2" align="center" bgcolor="yellow">10</td>
+        </tr>
+    </table>
+<!-- 
+b.-->
+    <table cellpadding ="6.470" border="2" bgcolor = #ffc266 style="color: #b32d00">
+        <tr style="text-decoration-line:none;color: black;">
+            <td>(1)</td>
+            <td>(2)</td>
+            <td>(3)</td>
+            <td colspan="3" align = "center">(4)</td>
+            <td>(5)</td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td></td>
+            <td colspan="5">Part I</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "2"></td>
+            <td colspan = "4">Chapter 1</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section A</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section B</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "2"></td>
+            <td colspan = "4">Chapter 2</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section A</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section B</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td></td>
+            <td colspan="5">Part I</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "2"></td>
+            <td colspan = "4">Chapter 3</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section A</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section B</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "2"></td>
+            <td colspan = "4">Chapter 3</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section A</td>
+            <td></td>
+        </tr>
+        <tr style = "text-decoration-line: underline">
+            <td colspan = "3"></td>
+            <td colspan="3">Section B</td>
+            <td></td>
+        </tr>
+    </table>
+<!--c. Lưu ý: Sử dụng tag <caption> bên trong tag <table>.-->
+    <b id="abc" align ="center" style="color: rgb(228, 36, 173);">
+        NUMBER 1-5 in VARIOUS LANGUAGES
+    </b>
+    <table cellpadding = "10" border="3" bgcolor = "FFCCFF" align="center" style="border-color: deeppink;">
+        <tr class = "text-bold" bgcolor ="FF66FF" style="color: black;text-decoration: underline;">
+            <td bgcolor = "FFCCFF"></td>
+            <td>English</td>
+            <td>Espanol</td>
+            <td>Francais</td>
+            <td>Italiano</td>
+            <td>Deutsch</td>
+        </tr>
+        <tr align = "center" style="color: rgb(21, 89, 214);">
+            <td class = "text-bold" bgcolor = "99FFFF" style="color: black;">1</td>
+            <td class = "text-italic">one</td>
+            <td class = "text-italic">uno</td>
+            <td class = "text-italic">un</td>
+            <td class = "text-italic">uno</td>
+            <td class = "text-italic">eins</td>
+        </tr>
+        <tr align = "center" style="color: rgb(21, 89, 214);">
+            <td class = "text-bold" bgcolor = "99FFFF" style="color: black;">1</td>
+            <td class = "text-italic">two</td>
+            <td class = "text-italic">dos</td>
+            <td class = "text-italic">deus</td>
+            <td class = "text-italic">due</td>
+            <td class = "text-italic">zwei</td>
+        </tr>
+        <tr align = "center" style="color: rgb(21, 89, 214);">
+            <td class = "text-bold" bgcolor = "99FFFF" style="color: black;">1</td>
+            <td class = "text-italic">three</td>
+            <td class = "text-italic">tres</td>
+            <td class = "text-italic">trois</td>
+            <td class = "text-italic">tre</td>
+            <td class = "text-italic">drei</td>
+        </tr>
+        <tr align = "center" style="color: rgb(21, 89, 214);">
+            <td class = "text-bold" bgcolor = "99FFFF" style="color: black;">1</td>
+            <td class = "text-italic">four</td>
+            <td class = "text-italic">cuatro</td>
+            <td class = "text-italic">quatra</td>
+            <td class = "text-italic">quattro</td>
+            <td class = "text-italic">vier</td>
+        </tr>
+        <tr align = "center" style="color: rgb(21, 89, 214);">
+            <td class = "text-bold" bgcolor = "99FFFF" style="color: black;">1</td>
+            <td class = "text-italic">five</td>
+            <td class = "text-italic">cinco</td>
+            <td class = "text-italic">cinq</td>
+            <td class = "text-italic">cinque</td>
+            <td class = "text-italic">funf</td>
+        </tr>
+    </table>
 </body>
 
 </html>
