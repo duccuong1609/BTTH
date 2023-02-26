@@ -7,26 +7,38 @@
     <meta name="description" content="Dùng tag (video> để chèn video clip vào trang Web. 
                                       Hiện tại 3 loại định dạng hỗ trợ trên web là: MP4, WebM, and Ogg.">
     <title>Bài 19.Sử dụng tag (VIDEO> HTML5</title>
+    <style>
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+                    }
+    </style>
 </head>
 <body>
     <div>
-        <p>Earth.mp4</p>
+        <h1>Earth.mp4</h1>
         <video poster="rsc/Earth.jpg" controls>
             <source src="rsc/Earth_mp4.mp4"type="video/mp4">
         </video>
     </div>
     <div>
-        <p>Earth.webm</p>
+        <h1>Earth.webm</h1>
         <video poster="rsc/Earth.jpg" controls>
             <source src="rsc/Earth_webm.webm" type="video/webm">
         </video>
     </div>
     <div>
-        <p>Earth.ogg</p>
+        <h1>Earth.ogg</h1>
         <video poster="RSC/Earth.jpg" controls>
             <source src="rsc/Earth_ogg.ogg" type="video/ogg">
         </video>
     </div>
-    <br><br><a href="Index.html">Trở về mục lục</a>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

@@ -5,69 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 4.Sử dụng các tag (OL>, (LI></title>
+    <style>
+        .flex_container > .div1{
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            border: 3px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+        .flex_container{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <ol type="I">
-        <li>Item one</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-        <li>Item Four</li>
-        <ol type="i">
-            <li>Item 4.1</li>
-            <li>Item 4.2</li>
-            <li>Item 4.3</li>
-        </ol>
-        <li>Item Five</li>
-    </ol>
-
-    <ol type="I">
-        <li>Oakfield Middle School</li>
-        <ol type="A">
-            <li>Tod Hastings</li>
-            <ol type="1">
-                <li>Math(#3)</li>
-                <li>History(#2)</li>
-                <li>Science(#2)</li>
-            </ol>
-            <li>Bonita Chavez</li>
-            <ol type="1">
-                <li>Math(#1)</li>
-                <li>History(#4)</li>
-                <li>Science(#3)</li>
-            </ol>
-        </ol>
-        <li>Parkview Mid-High</li>
-        <ol type="A">
-            <li>Jacque Russell</li>
-            <ol type="1">
-                <li>Math(#2)</li>
-                <li>History(#5)</li>
-                <li>Science(#4)</li>
-            </ol>
-            <li>Dwayne Clancy</li>
-            <ol type="1">
-                <li>Math(#4)</li>
-                <li>History(#7)</li>
-                <li>Science(#1)</li>
-            </ol>
-        </ol>
-        <li></li>
-        <li></li>
-        <li>Jackson Heights Middle School</li>
-            <ol type="A">
-                <li>Chiristine Quon</li>
-                <ol type="1">
-                    <li>Math(#7)</li>
-                    <li>History(#6)</li>
-                    <li>Science(#5)</li>
+    <div class="flex_container">
+        <div class="div1">
+            <ol type="I">
+                <li>Item one</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+                <li>Item Four</li>
+                <ol type="i">
+                    <li>Item 4.1</li>
+                    <li>Item 4.2</li>
+                    <li>Item 4.3</li>
                 </ol>
-                <li>Roger Dietz</li>
-                <ol type="1">
-                    <li>Math(#5)</li>
-                    <li>History(#8)</li>
-                    <li>Science(#7)</li>
+                <li>Item Five</li>
+            </ol>
+        </div>
+    </div>
+    <div class="flex_container">
+        <div class="div1">
+            <ol type="I">
+                <li>Oakfield Middle School</li>
+                <ol type="A">
+                    <li>Tod Hastings</li>
+                    <ol type="1">
+                        <li>Math(#3)</li>
+                        <li>History(#2)</li>
+                        <li>Science(#2)</li>
+                    </ol>
+                    <li>Bonita Chavez</li>
+                    <ol type="1">
+                        <li>Math(#1)</li>
+                        <li>History(#4)</li>
+                        <li>Science(#3)</li>
+                    </ol>
                 </ol>
-    </ol>
-    <a href="Index.html">Trở về mục lục</a>
+                <li>Parkview Mid-High</li>
+                <ol type="A">
+                    <li>Jacque Russell</li>
+                    <ol type="1">
+                        <li>Math(#2)</li>
+                        <li>History(#5)</li>
+                        <li>Science(#4)</li>
+                    </ol>
+                    <li>Dwayne Clancy</li>
+                    <ol type="1">
+                        <li>Math(#4)</li>
+                        <li>History(#7)</li>
+                        <li>Science(#1)</li>
+                    </ol>
+                </ol>
+                <li></li>
+                <li></li>
+                <li>Jackson Heights Middle School</li>
+                    <ol type="A">
+                        <li>Chiristine Quon</li>
+                        <ol type="1">
+                            <li>Math(#7)</li>
+                            <li>History(#6)</li>
+                            <li>Science(#5)</li>
+                        </ol>
+                        <li>Roger Dietz</li>
+                        <ol type="1">
+                            <li>Math(#5)</li>
+                            <li>History(#8)</li>
+                            <li>Science(#7)</li>
+                        </ol>
+            </ol>
+        </div>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 17.Thao tác với (FORM> và các tag liên quan đến chọn/nhập dữ liệu</title>
+    <style>
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .nextButtom{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- a. Dùng HTML5 tạo form khảo sát sau: -->
@@ -108,9 +120,17 @@ State/Zip:
             </tr>
         </form>
     </table>
-    <br><br>
-    <a href="Bai17b.html">Chuyển Đến ý B</a>
-    <br>
-    <a href="Index.html">Trở về mục lục</a>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+    <div class="nextButtom">
+        <img src="rsc/Next.png" alt="HomeButtom" usemap="#imagemap2" width="40px" height="40px">
+        <map name="imagemap2">
+            <area shape="circle" coords="36,43,37" href="Bai17b.html">
+        </map>
+    </div>
 </body>
 </html>

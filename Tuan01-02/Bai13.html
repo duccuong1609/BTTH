@@ -5,22 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 13.Thao tác với các tag liên quan đến tạo FORM</title>
+    <style>
+        .flex_container > .div1{
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            border: 3px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+        .flex_container{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <form class="form-asd" role="form">
-        <span>Name:<br></span>
-        <input type="text" name ="txtName"required="">
-        <span><br>Telephone Number:<br></span>
-        <input type="tel" name="txtTel"required="">
-        <span><br>Email:<br></span>
-        <input type="email" name="txtEmail" required="">
-        <span><br>Favorite Color:<br></span>
-        <input type="color" name="txtColor" value="#0000ff">
-        <span><br>Date of Birth:<br></span>
-        <input type="date" name= "txtDate"value="2015-06-07">
-        <br><br><br>&nbsp;&nbsp;&nbsp;
-        <button type="submit">submit</button>
-    </form>
-    <br><a href="Index.html">Trở về mục lục</a>
+    <div class="flex_container">
+        <div class="div1">
+            <form class="form-asd" role="form">
+                <span>Name:<br></span>
+                <input type="text" name ="txtName"required="">
+                <span><br>Telephone Number:<br></span>
+                <input type="tel" name="txtTel"required="">
+                <span><br>Email:<br></span>
+                <input type="email" name="txtEmail" required="">
+                <span><br>Favorite Color:<br></span>
+                <input type="color" name="txtColor" value="#0000ff">
+                <span><br>Date of Birth:<br></span>
+                <input type="date" name= "txtDate"value="2015-06-07">
+                <br><br><br>&nbsp;&nbsp;&nbsp;
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

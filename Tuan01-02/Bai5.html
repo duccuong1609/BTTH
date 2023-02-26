@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 5.Sử dụng (A href=”...” ...>, (A name=”...”></title>
+    <style>
+        .HomeButtom{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    </style>
+    
 </head>
 <body>
     <h1>Example Cafe</h1>
@@ -27,6 +35,11 @@
             <a href="URLs.html">Example</a>
         </li>
     </ul>
-    <a href="Index.html">Trở về mục lục</a>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

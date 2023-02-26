@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 2.Các thẻ định dạng (H1>, ...(H6>, (P>, (HR></title>
     <style>
-        h1.margin {  
-        margin: 50px 100px 150px 200px;  
+        .flex_container > .div1{
+            display: inline-block;
+            position: relative;
+            background-color: rgb(250, 197, 140);
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+        .flex_container{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
         }
     </style>
-    
+
 </head>
-<body align = 'center' border="1">
-    <h1>Heading Centering</h1>
-    <hr color="gray">
-    <h1>Heading Level #1</h1>
-    <h2>Heading Level #2</h2>
-    <h3>Heading Level #3</h3>
-    <h4>Heading Level #4</h4>
-    <h5>Heading Level #5</h5>
-    <h6>Heading Level #6</h6>
-    <a href="Index.html">Trở về mục lục</a>
+<body>
+    <div class="flex_container">
+        <div class="div1" align="center">
+            <h1>Heading Centering</h1>
+            <hr color="gray" width="400px">
+            <h1>Heading Level #1</h1>
+            <h2>Heading Level #2</h2>
+            <h3>Heading Level #3</h3>
+            <h4>Heading Level #4</h4>
+            <h5>Heading Level #5</h5>
+            <h6>Heading Level #6</h6>
+        </div>
+    </div>
+    
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

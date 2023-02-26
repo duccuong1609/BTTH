@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sử dụng (DATALIST) trong (INPUT type=”text” ...) cho bai 17a</title>
+    <style>
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .backButtom{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <table bgcolor="FFCD76" align="center" border="2" style="border-color: black;" cellpadding ="0.5">
@@ -126,7 +138,17 @@ State/Zip:
             </tr>
         </form>
     </table>
-    <br><br>
-    <a href="Bai18.html">Tro Lai</a>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+    <div class="backButtom">
+        <img src="rsc/Back.png" alt="HomeButtom" usemap="#imagemap2" width="40px" height="40px">
+        <map name="imagemap2">
+            <area shape="circle" coords="36,43,37" href="Bai18.html">
+        </map>
+    </div>
 </body>
 </html>

@@ -5,37 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 14.Các tag liên quan đến tạo FORM</title>
+    <style>
+        .flex_container > .div1{
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            border: 3px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+        .flex_container{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <form role="form">
-        <h1>Contact Us</h1>
-        <p>Use the following form to send a message to Example Cafe</p>
-        <table>
-            <tr>
-                <td><label>Your email</label></td>
-                <td><input type="email" name="txtEmail" required="" size="20"></td>
-            </tr>
-            <tr>
-                <td><label>Message</label></td>
-                <td><textarea cols="50" rows="10" required=""></textarea></td>
-            </tr>
-            <tr>
-                <td><label>How did your hear about us ?</label></td>
-                <td><select>
-                    <option>Google</option>
-                    <option>Twitter</option>
-                    <option>Facebook</option>
-                    <option>Others</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td><label>Newsletter</label></td>
-                <td><input type="checkbox" value="" required="" checked>
-                <span>Ensure this box is checked if you  would like to receive email updates</span></td>
-            </tr>
-        </table>
+    <div class="flex_container">
+        <div class="div1">
+            <h1>Contact Us</h1>
+            <p>Use the following form to send a message to Example Cafe</p>
+            <table>
+                <tr>
+                    <td><label>Your email</label></td>
+                    <td><input type="email" name="txtEmail" required="" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Message</label></td>
+                    <td><textarea cols="50" rows="10" required=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>How did your hear about us ?</label></td>
+                    <td><select>
+                        <option>Google</option>
+                        <option>Twitter</option>
+                        <option>Facebook</option>
+                        <option>Others</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Newsletter</label></td>
+                    <td><input type="checkbox" value="" required="" checked>
+                    <span>Ensure this box is checked if you  would like to receive email updates</span></td>
+                </tr>
+            </table>
             <button type="submit">Send message</button>
-    </form>
-    <br><br><a href="Index.html">Trở về mục lục</a>
+        </div>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>

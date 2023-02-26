@@ -5,37 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex_container > .div1{
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            border: 3px solid black;
+            margin: 10px;
+            padding: 10px;
+            padding-top: 0px;
+        }
+        .flex_container{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        .HomeButtom{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        h1{
+            margin-top: 0px;
+        }
+    </style>
 </head>
 <body>
-    <form role="form">
-        <h1>Travel reservation form</h1>
-        <b>* denotes mandotory</b><br><br>
-        <span>Full name*:</span><br>
-        <input type="text" placeholder="FirstName LastName" required="" id="txtNameID" name="txtName">
-        <br><span>Email address*:</span><br>
-        <input type="text" placeholder="EMAIL ADDRESS" required="" id="txtEmailID" name="txtEmail">
-        <br><span>Select Tour Package*:</span><br>
-        <select>
-            <option>Goa</option>
-            <option>Others</option>
-        </select>
-        <br><span>Arrival date*:</span>
-        <br><input type="text" placeholder="m/d/y" required="" id="txtDateID" name="txtDate">
-        <br><span>Number of persons*:</span><br>
-        <input type="text" placeholder="UNKNOWN_TYPE" required="" id="txtpersonID" name="txtperson">
-        <br><span>What would you wnat to avail?*:</span>
-        <br><span>Boarding</span> <input type="checkbox" required="" id="Boarding_Checkbox_id" name="Checkbox">
-        <br><span>Fooding</span> <input type="checkbox"  required="" id="Fooding_Checkbox_id" name="Checkbox">
-        <br><span>Sight seeing</span> <input type="checkbox" required="" id="Seeing_Checkbox_id" name="Checkbox">
-        <br><span>Discout Coupon code :</span><br>
-        <input type="text" placeholder="UNKNOWN_TYPE" id="Discount_id" name="Discount">
-        <br><span>Terms and conditions*</span><br>
-        <input type="radio" id="radio1" name="radio" required="" checked>
-        <span>I agree</span>
-        <input type="radio" id="radio2" name="radio"> 
-        <span>I disagree</span><br>
-        <button type="submit">Complete reservation</button>
-    </form>
-    <br><br><a href="Index.html">Trở về mục lục</a>
+    <div class="flex_container">
+        <div class="div1">
+            <h1>Travel reservation form</h1>
+            <b>* denotes mandotory</b><br><br>
+            <span>Full name*:</span><br>
+            <input type="text" placeholder="FirstName LastName" required="" id="txtNameID" name="txtName">
+            <br><span>Email address*:</span><br>
+            <input type="text" placeholder="EMAIL ADDRESS" required="" id="txtEmailID" name="txtEmail">
+            <br><span>Select Tour Package*:</span><br>
+            <select>
+                <option>Goa</option>
+                <option>Others</option>
+            </select>
+            <br><span>Arrival date*:</span>
+            <br><input type="text" placeholder="m/d/y" required="" id="txtDateID" name="txtDate">
+            <br><span>Number of persons*:</span><br>
+            <input type="text" placeholder="UNKNOWN_TYPE" required="" id="txtpersonID" name="txtperson">
+            <br><span>What would you wnat to avail?*:</span>
+            <br><span>Boarding</span> <input type="checkbox" id="Boarding_Checkbox_id" name="Checkbox">
+            <br><span>Fooding</span> <input type="checkbox" id="Fooding_Checkbox_id" name="Checkbox">
+            <br><span>Sight seeing</span> <input type="checkbox" id="Seeing_Checkbox_id" name="Checkbox">
+            <br><span>Discout Coupon code :</span><br>
+            <input type="text" placeholder="UNKNOWN_TYPE" id="Discount_id" name="Discount">
+            <br><span>Terms and conditions*</span><br>
+            <input type="radio" id="radio1" name="radio" required="" checked>
+            <span>I agree</span>
+            <input type="radio" id="radio2" name="radio"> 
+            <span>I disagree</span><br>
+            <button type="submit">Complete reservation</button>
+    </div>
+    </div>
+    <br><br>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+        <map name="imagemap">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
 </body>
 </html>
