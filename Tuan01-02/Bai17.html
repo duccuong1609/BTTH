@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 17.Thao tác với (FORM> và các tag liên quan đến chọn/nhập dữ liệu</title>
     <style>
-        .HomeButtom{
+        .HomeButtom {
             position: fixed;
             right: 0;
             bottom: 0;
         }
-        .nextButtom{
+        
+        .nextButtom {
             position: fixed;
             left: 0;
             bottom: 0;
         }
     </style>
 </head>
+
 <body>
     <!-- a. Dùng HTML5 tạo form khảo sát sau: -->
-    <table bgcolor="FFCD76" align="center" border="2" style="border-color: black;" cellpadding ="0.5">
+    <table bgcolor="FFCD76" align="center" border="2" style="border-color: black;" cellpadding="0.5">
         <form role="form">
             <tr>
                 <td>
                     <h1 align="center">Survey Form</h1>
-                <span>If you are interested in pucharsing one or more of our products, before ordering please Complete<br>
+                    <span>If you are interested in pucharsing one or more of our products, before ordering please Complete<br>
                       some or all of the following survey for our marketing department. Answering any question is<br>
                       optional, and all information will be kept strictly confidential. Thank you very much for your time!</span>
-                <ol type="1">
-                    <li>What is your name ?<br>
-                        <input type="text" required="" name="Name" size="30">
-                    </li><br>
-                    <li>What is your date of Birth<br>
-                        Month: 
-                        <select>
+                    <ol type="1">
+                        <li>What is your name ?<br>
+                            <input type="text" required="" name="Name" size="30">
+                        </li><br>
+                        <li>What is your date of Birth<br> Month:
+                            <select>
                             <option>January</option>
                             <option>Febrary</option>
                             <option>March</option>
@@ -47,9 +49,8 @@
                             <option>October</option>
                             <option>November</option>
                             <option>December</option>
-                        </select>
-                        Date:
-                        <select>
+                        </select> Date:
+                            <select>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -71,50 +72,44 @@
                             <option>19</option>
                             <option>20</option>
                             <option>others</option>
-                        </select>
-                        Year:
-                        <input type="text" required="" size="5" value="19">
-                    </li><br>
-                    <li>
-                        <span>What is your mailing address (if you would like to have a hard copy of our catalog sent to<br>
+                        </select> Year:
+                            <input type="text" required="" size="5" value="19">
+                        </li><br>
+                        <li>
+                            <span>What is your mailing address (if you would like to have a hard copy of our catalog sent to<br>
                             you)?</span><br>
-                        <textarea rows="5" cols="60">Number/P.O. Box/Route: 
+                            <textarea rows="5" cols="60">Number/P.O. Box/Route: 
 Street/Avenue/Road: 
 City: 
 State/Zip:
                         </textarea>
-                        </span>
-                    </li><br>
-                    <li>What is your email address?<br>
-                        <input type="email" name="Address" id="AddressEmail" required="@">
-                    </li><br>
-                    <Li>Have you viewed our online product catalog?<br>
-                        <input type="radio" name="radio" id="radio1" checked>
-                        Yes
-                        <input type="radio" name="radio" id="radio2">
-                        No
-                    </Li><br>
-                    <li>If so, what product(s), besides the one you are ordering, might you be interested in pucharsing<br>
-                        int the future? (Check all that apply.)<br>
-                        <input type="checkbox"> VCR<br>
-                        <input type="checkbox"> Big Screen TV<br>
-                        <input type="checkbox"> Audio Equipment<br>
-                        <input type="checkbox"> Video Equipment<br>
-                        <input type="checkbox"> Camera Equipment<br>
-                        <input type="checkbox" checked> Others
-                        <input type="text" placeholder="Please List"></input>
-                    </li><br>
-                    <li>Do you have any questions, comment or suggestions before processding to the Order Form?<br>
-                        <textarea rows="8" cols="60">Your Input:</textarea>
-                    </li>
-                </ol>
+                            </span>
+                        </li><br>
+                        <li>What is your email address?<br>
+                            <input type="email" name="Address" id="AddressEmail" required="@">
+                        </li><br>
+                        <Li>Have you viewed our online product catalog?<br>
+                            <input type="radio" name="radio" id="radio1" checked> Yes
+                            <input type="radio" name="radio" id="radio2"> No
+                        </Li><br>
+                        <li>If so, what product(s), besides the one you are ordering, might you be interested in pucharsing<br> int the future? (Check all that apply.)<br>
+                            <input type="checkbox"> VCR<br>
+                            <input type="checkbox"> Big Screen TV<br>
+                            <input type="checkbox"> Audio Equipment<br>
+                            <input type="checkbox"> Video Equipment<br>
+                            <input type="checkbox"> Camera Equipment<br>
+                            <input type="checkbox" checked> Others
+                            <input type="text" placeholder="Please List"></input>
+                        </li><br>
+                        <li>Do you have any questions, comment or suggestions before processding to the Order Form?<br>
+                            <textarea rows="8" cols="60">Your Input:</textarea>
+                        </li>
+                    </ol>
                 </td>
             </tr>
             <tr>
                 <td align="center">
-                    <button type="submit">Send Form</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit">Send Form</button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="reset">Clear Form</button>
                 </td>
             </tr>
@@ -133,4 +128,5 @@ State/Zip:
         </map>
     </div>
 </body>
+
 </html>

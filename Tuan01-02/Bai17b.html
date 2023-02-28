@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>17b</title>
     <style>
-        .HomeButtom{
+        .HomeButtom {
             position: fixed;
             right: 0;
             bottom: 0;
         }
-        .backButtom{
+        
+        .backButtom {
             position: fixed;
             left: 0;
             bottom: 0;
         }
+        
+        .flex_container>.div1 {
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .flex_container {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            vertical-align: middle;
+            justify-content: center;
+            margin-top: 0px;
+            position: relative;
+            width: 100%
+        }
     </style>
 </head>
+
 <body>
     <!-- b.  -->
-    <table border="1" style="border-color: black;" cellpadding="5" align="center">
-        <tr>
-            <td>
-                <span>Browser:</span>
-                <select>
-                    <option></option>
-                    <option>Coc Coc</option>
-                    <option>Chrome</option>
-                    <option>Mozilla Fire Fox</option>
-                </select>
-                <br><br>
-                <label>Username:</label>
-                <input type="text" name="Name" id="NameId" required="">
-                <br><br>
-                <label>Encryption:</label>
-                <select>
-                    <option>2048 (Hight Grade)</option>
-                    <option>1024 (Average Grade)</option>
-                    <option>512 (Low Grade)</option>
-                    <option>256 (Very Low Grade)</option>
-                </select>
-                <br><br>
-                <label>0</label>
-                <input type="range" min="0" max="100">
-                <label>100</label>
-                <br><br>
-                <input type="text" value="50">
-                <br><br>
-                <label>Birthday: </label>
-                <input type="date" name="time" id="date">
-                <br><br>
-                <label>Select your favorite color:</label>
-                <input type="color" value="#ff0000">
-                <br><br>
-                <label>Birthday (Month and Year):</label>
-                <input type="month" name="time" id="monthandyear">
-                <br><br>
-                <label>Select a week:</label>
-                <input type="week" name="time" id="week">
-                <br><br>
-                <label>Select a time:</label>
-                <input type="time" name="time" id="timeid">
-                <br><br>
-                <label>Birthday (date and time):</label>
-                <input type="datetime" name="time" id="dateandtime">
-                <br><br>
-                <label>E-mail:</label>
-                <input type="email" required="" name="Email" id="EMailId">
-                <br><br>
-                <label>Search Google</label>
-                <input type="text" name="Google" id="Search Google">
-                <br><br>
-                <label>Telephone:</label>
-                <input type="tel" required="">
-                <br><br>
-                <label>Add your homepage:</label>
-                <input type="text" required=""><br><br>
-                <button type="submit">Submit</button><br><br>
-                <span><b>Note:</b> The date list tag is not supported in Safari or IE9 (and earlier)</span>
-            </td>
-        </tr>
-    </table>
+    <div class="flex_container">
+        <div class="div1">
+            <span>Browser:</span>
+            <select>
+                            <option></option>
+                            <option>Coc Coc</option>
+                            <option>Chrome</option>
+                            <option>Mozilla Fire Fox</option>
+                        </select>
+            <br><br>
+            <label>Username:</label>
+            <input type="text" name="Name" id="NameId" required="">
+            <br><br>
+            <label>Encryption:</label>
+            <select>
+                            <option>2048 (Hight Grade)</option>
+                            <option>1024 (Average Grade)</option>
+                            <option>512 (Low Grade)</option>
+                            <option>256 (Very Low Grade)</option>
+            </select>
+            <br><br>
+            <label>0</label>
+            <input type="range" min="0" max="100">
+            <label>100</label>
+            <br><br>
+            <input type="text" value="50">
+            <br><br>
+            <label>Birthday: </label>
+            <input type="date" name="time" id="date">
+            <br><br>
+            <label>Select your favorite color:</label>
+            <input type="color" value="#ff0000">
+            <br><br>
+            <label>Birthday (Month and Year):</label>
+            <input type="month" name="time" id="monthandyear">
+            <br><br>
+            <label>Select a week:</label>
+            <input type="week" name="time" id="week" value="week">
+            <br><br>
+            <label>Select a time:</label>
+            <input type="time" name="time" id="timeid">
+            <br><br>
+            <label>Birthday (date and time):</label>
+            <input type="datetime" name="time" id="dateandtime">
+            <br><br>
+            <label>E-mail:</label>
+            <input type="email" required="" name="Email" id="EMailId">
+            <br><br>
+            <label>Search Google</label>
+            <input type="text" name="Google" id="Search Google">
+            <br><br>
+            <label>Telephone:</label>
+            <input type="tel" required="">
+            <br><br>
+            <label>Add your homepage:</label>
+            <input type="text" required=""><br><br>
+            <button type="submit">Submit</button><br><br>
+            <span><b>Note:</b> The date list tag is not supported in Safari or IE9 (and earlier)</span>
+        </div>
+    </div>
+
     <div class="HomeButtom">
         <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
         <map name="imagemap1">
@@ -91,8 +113,9 @@
     <div class="backButtom">
         <img src="rsc/Back.png" alt="HomeButtom" usemap="#imagemap2" width="40px" height="40px">
         <map name="imagemap2">
-            <area shape="circle" coords="36,43,37" href="Bai17.html">
+            <area shape="circle" coords="36,43,37" href="FlexBoxBai17.html">
         </map>
     </div>
 </body>
+
 </html>
