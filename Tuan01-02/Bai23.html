@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dùng các thành phần HTML, thiết kế trang Web tương tự như (GameZone)</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="css/Bai23css.css">
+        <style>
+            /*font*/
+            @font-face {
+                font-family: Neue_97;
+                src: url(rsc/Helvetica\ Neue\ 97\ Black\ Condensed.otf);
+            }
+            @font-face {
+                font-family: Ribbon_131;
+                src: url(rsc/Ribbon131BT-Bold.otf);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="background">
+            <div id="poster_games">
+                <div id="poster" style="position: relative;">
+                    <h1 id="gamezone"><font style="color: rgb(105, 103, 103);">GAME</font><font style="color: rgb(157, 157, 157);">ZONE</font></h1>
+                        <img src="rsc/gamezone.png" alt="" height="400px" width="319.2px" style="position: relative;bottom: 0px;left: 0px;">
+                        <img src="rsc/gamezone2.png" alt="" height="460px" style="z-index: 2;position: absolute;bottom: 0px;left: -10px;">
+                </div>
+                <div id="current-games">
+                    <h3 id="h3">current games</h3>
+                    <div id="ul">
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            Golden Eye 007</p>
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            Harry Potter & the Chamber of Secret</p>
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            Prince of Persia: Sands of Time</p>
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            Resident Evil: Code Veronica X</p>
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            The Legend of Zelda: Majora's Mask</p>
+                        <p><i class='fa fa-square' style='color: white;font-size: 5px;position: relative;top: -3.2px;'></i>
+                            Tomb Raider : The Lost Artifact</p>
+                        <a href="#">More Games</a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu_content">
+                <div id="menu">
+                    <a href="#" id="menu_item" style="width: 15%;">Home</a>
+                    <a href="#" id="menu_item" style="width: 23%;">Reviews</a>
+                    <a href="#" id="menu_item" style="width: 20%;">Gallery</a>
+                    <a href="#" id="menu_item" style="width: 26%;">Community</a>
+                    <a href="#" id="menu_item" style="width: 16%;border-right: 0px;">Contact</a>
+                </div>
+                <div id="content">
+                    <table id="game">
+                        <tr style="background-color: rgb(28, 28, 165);">
+                            <td class="td_game_des"></td>
+                            <td class="td_game_des"></td>
+                            <td class="td_game_des">Mã</td>
+                            <td class="td_game_des">Tên review</td>
+                            <td class="td_game_des">Nội dung review</td>
+                            <td class="td_game_des">Loại</td>
+                        </tr>
+                        <tr>
+                            <td class="td_game"><a href="#">Xem</a></td>
+                            <td class="td_game"><a href="#">Xóa</a></td>
+                            <td class="td_game">0022</td>
+                            <td class="td_game">World of Warcraft</td>
+                            <td class="td_game">Nếu bạn là một thần dân trong<br>thế giới thần thoại Azeroth...</td>
+                            <td class="td_game">Thông báo</td>
+                        </tr>
+                        <tr>
+                            <td class="td_game"><a href="#">Xem</a></td>
+                            <td class="td_game"><a href="#">Xóa</a></td>
+                            <td class="td_game">0032</td>
+                            <td class="td_game">[PES2009] Kĩ Thuật - <br>Chiến Thuật & Đội Hình</td>
+                            <td class="td_game">Kĩ Thuật - Chiến Thuật & Đội Hình</td>
+                            <td class="td_game">Dành cho thành viên</td>
+                        </tr>
+                        <tr>
+                            <td class="td_game"><a href="#">Xem</a></td>
+                            <td class="td_game"><a href="#">Xóa</a></td>
+                            <td class="td_game">0011</td>
+                            <td class="td_game">Võ lâm truyền kỳ cập<br>nhật phiên bản chống<br>chặn cổng</td>
+                            <td class="td_game">Lần cập nhật này cũng sửa lỗi<br>bán tất cả vật phẩm bang hội về<br>0 lượng ....</td>
+                            <td class="td_game">Thông tin</td>
+                        </tr>
+                        <tr>
+                            <td class="td_game"><a href="#">Xem</a></td>
+                            <td class="td_game"><a href="#">Xóa</a></td>
+                            <td class="td_game">0031</td>
+                            <td class="td_game">Tiên Kiếm Online sẽ<br>Closed Beta vào ngày<br>22/12</td>
+                            <td class="td_game">Game có 6 lớp nhân vật là Kiếm<br>khách, Đao khách, Luyện khí<br>sư,...</td>
+                            <td class="td_game">Dành cho thành viên</td>
+                        </tr>
+                        <tr>
+                            <td class="td_game"><a href="#">Xem</a></td>
+                            <td class="td_game"><a href="#">Xóa</a></td>
+                            <td class="td_game">0021</td>
+                            <td class="td_game">Cổ Long - game kiếm<br>hiệp đánh theo lượt<br>Closed Beta 26/12</td>
+                            <td class="td_game">Trò chơi lấy bối cảnh từ bộ tiểu<br>thuyết Cổ Long với những nhân<br>vật đại hiệp trương nghĩa...</td>
+                            <td class="td_game">Thông báo</td>
+                        </tr>
+                    </table>
+                </div>
+                <p id="nextPage">
+                    <a href="#" style="text-decoration-line: none;">1</a>
+                    <a href="#">2</a>
+                </p> 
+            </div>
+        </div>
+        <div id="bottom">
+            <div display="inline-block" style="width: 70%;border-image: url(rsc/Border_black_gray.png) 210 round;
+            border-bottom: 20px solid transparent;height: 0px;">&nbsp;</div>
+            <span style="width: 30%;" id="copy_right">&#169; Copy right XXX. All rights reversed</span>
+        </div>
+        <div class="HomeButtom">
+            <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap" width="60px" height="60px">
+            <map name="imagemap">
+                <area shape="circle" coords="54,64,56" href="Index.html">
+            </map>
+        </div>
+    </body>
+</html>
