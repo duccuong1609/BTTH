@@ -16,15 +16,7 @@ body{
     margin-bottom: 15px;
     z-index: 1;
 }
-#menu_content{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 77%;
-    margin-bottom: 15px;
-    border-image: url(rsc/border_black_gray.webp) 210 round;
-    border-top: 20px solid transparent;
-}
+
 /*content*/
 #content{
     display: flex;
