@@ -1,0 +1,83 @@
+*
+.HomeButtom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.backButtom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#line1{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#line2{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#line3{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 5px;
+}
+#text_style{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(130,29,123);
+    padding: 20px;
+    margin-bottom: 5px;
+    width: 800px;
+}
+#text_style_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.Colorful_style {
+    text-shadow: -3px -5px 3px #cc0000,2px 5px 3px rgb(31, 158, 31);
+    color: black;
+    }
+.Inset_effect{
+    color: rgb(130,29,123);
+    background-color: rgb(217,192,214);
+    text-shadow: 0px 2px 0px white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.Double_Font {
+text-shadow: 0px -15px 0px rgb(252, 65, 245);
+color: black;
+}
+.Glossy_Style{
+    background-image: linear-gradient(to top,orange,white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+.Grunge_Style{
+    background-image: linear-gradient(200deg,red,black, red,black, red,black, red,black 90.71%),
+                    linear-gradient(155deg, red,black, red,black, red,black, red,black 90.71%),
+                    linear-gradient(336deg,red,black, red,black, red,black, red,black 90.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+.Neon_Glow{
+    background-color: black;
+    color: #04d9ff;
+    padding: 4px;
+}

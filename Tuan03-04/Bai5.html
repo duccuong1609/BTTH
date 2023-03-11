@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5.CSS Căn bản - Hình ảnh nền</title>
+    <style>
+        #example{
+            background-image: url(https://demoda.vn/wp-content/uploads/2022/06/hinh-nen-tim.jpg),
+                              url(https://photo2.tinhte.vn/data/attachment-files/2021/11/5734331_44a78149149ec38db391afb7065155ac.jpg),
+                              url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3be1dae-3caa-4d45-be6c-3de586ba95e2/det13d6-3c5a446f-01a1-450f-837b-5b3beb22fe57.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IzYmUxZGFlLTNjYWEtNGQ0NS1iZTZjLTNkZTU4NmJhOTVlMlwvZGV0MTNkNi0zYzVhNDQ2Zi0wMWExLTQ1MGYtODM3Yi01YjNiZWIyMmZlNTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Jza8pjc0IChazuJfHnZJieP6MmZvFz39woWNPNKdkps),
+                              url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3be1dae-3caa-4d45-be6c-3de586ba95e2/deppgde-67c6021e-9bb2-41e6-8eec-95b4ba8502f3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IzYmUxZGFlLTNjYWEtNGQ0NS1iZTZjLTNkZTU4NmJhOTVlMlwvZGVwcGdkZS02N2M2MDIxZS05YmIyLTQxZTYtOGVlYy05NWI0YmE4NTAyZjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VqJpqWYoXnoLxNLZLPAE6IvVazvH-7giiJmBJX79s9E);
+            background-position: right bottom, left top,left bottom, right top;
+            background-repeat: no-repeat, no-repeat,no-repeat,repeat;
+            background-size: 600px 300px,600px 300px,600px 300px,600px 300px;
+            width: 100%;
+            height: 800px;
+        }
+        .HomeButtom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="example">
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+</body>
+</html>

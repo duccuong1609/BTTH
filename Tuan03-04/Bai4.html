@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4.CSS Căn bản - Dùng CSS định dạng bảng</title>
+    <style>
+        .wrapper{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            font-size: 25px;
+        }
+        th{
+            background-color: #914043;
+            color: white;
+        }
+        th,td,tr,table{
+            border: 2px solid #993738;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        .Le{
+            background-color: rgb(201, 201, 201);
+        }
+        th:last-child,td:last-child{
+            text-align: right;
+            padding-left: 20px;
+        }
+        th:first-child,td:first-child{
+            padding-right: 50px;
+        }
+        .HomeButtom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h3 style="color: #993738;">Exercise example</h3>
+    <table>
+        <tr>
+            <th align="left">Region</th>
+            <th>Percentage</th>
+        </tr>
+        <tr class="Le">
+            <td>New England</td>
+            <td>12%</td>
+        </tr>
+        <tr class="chan">
+            <td>Mid-Atlantic</td>
+            <td>19%</td>
+        </tr>
+        <tr class="Le">
+            <td>South and Puerto Rico</td>
+            <td>15%</td>
+        </tr>
+        <tr class="chan">
+            <td>Midwest and Plains States</td>
+            <td>12%</td>
+        </tr>
+        <tr class="Le">
+            <td>Southwest and Mountain</td>
+            <td>10%</td>
+        </tr class="chan">
+        <tr>
+            <td>West, Alaska, and Hawaii</td>
+            <td>20%</td>
+        </tr>
+        <tr class="Le">
+            <td>Abroad</td>
+            <td>13%</td>
+        </tr>
+    </table>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+    </div>
+</body>
+</html>
