@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9.CSS Animation với trạng thái chuột - Tạo hiệu ứng di chuyển chuột dùng CSS</title>
+    <style>
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        #page{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(156, 13, 13);
+            background-color: rgb(237, 237, 237);
+            width: calc(10px + fit-content)
+        }
+        #container{
+            margin-top: 50px;
+            display: flex;
+            justify-content: start !important;
+            margin-left: 3px;
+            margin-right: 5px;
+        }
+        #container1{
+            display: flex;
+            justify-content: start !important;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        #logo{
+            background-color: white;
+            border: 2px solid rgb(156, 13, 13);
+            margin: 3px;
+            padding: 4px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        #logo:hover{
+            border: 4px solid rgb(156, 13, 13);
+            border-style: double;
+            margin: 1px;
+            
+        }
+        .HomeButtom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="page">
+            <h1 align="center">Sponsors</h1>
+        <div id="container">
+            <img src="https://www.coursinfo.fr/wp-content/uploads/2016/04/facebook-logo.jpg" width="200px" height="80px" alt="" id="logo">
+            <img src="https://pixy.org/download/94016/" width="200px" height="80px" alt="" id="logo">
+            <img src="https://nextjump.com/wp-content/uploads/2022/03/NxJ_Black.png" width="200px" height="80px" alt="" id="logo">
+            <img src="https://mms.businesswire.com/media/20190220005233/en/706559/23/Ooyala_Logo.jpg" width="200px" height="80px" alt="" id="logo">
+        </div>
+        <div id="container1">
+            <img src="https://cdn.cookielaw.org/logos/356f77a2-eb53-4146-ba66-df614f266841/5368e276-ae2d-4671-8f4a-e56a019150c2/7c112fc8-28d0-4e66-9fa9-c70daf8d700a/Palantir_Logo_300dpi_(1).png" width="200px" height="80px" alt="" id="logo">
+            <img src="https://dichvuquangcao.vn/wp-content/uploads/2021/07/quora.jpg" width="200px" height="80px" alt="" id="logo">
+            <img src="https://rickwilcox.com/wp-content/themes/wilcox2016/library/images/tripad-logo.png" width="200px" height="80px" alt="" id="logo">
+        </div>
+        </div>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+</body>
+</html>

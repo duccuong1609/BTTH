@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7.CSS Căn bản - Tạo cột </title>
+    <style>
+        .newspaper {
+        width: 600px;
+        -webkit-column-count:3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+        -webkit-column-gap:40px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 40px; /* Firefox */
+        column-gap: 40px;
+        -webkit-column-rule-style: solid; /* Firefox */
+        -moz-column-rule-style:solid; /* Chrome, Safari, Opera */
+        column-rule-style: solid;
+        -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+        -moz-column-rule-width: 1px; /* Firefox */
+        column-rule-width: 1px;
+        -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+        -moz-column-rule-color: lightblue; /* Firefox */
+        column-rule-color: lightblue;
+        }
+        .HomeButtom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>MH17 crash: Russia vetoes UN resolution<br>for international tribunal</h1>
+    <div class="newspaper">
+        <span>Russia has used its veto at the UN to block a draft resolution to set up an international tribunal into the MH17 air disaster in July 2014.It was the only nation at the 15-member UN Security Council to oppose the move, triggering widespread condemnation.</span>
+        <p> The malaysian Air lines flight from Amsterdam to Kuala Lumpur crashed in eastern Ukraine, killing all 298 people on board. Pro-Russian rebels in the area have denied shooting down the aircraft. Western nations and Ukraine say there is evidence it was hit by a Russian-supplied Buk anti-aircraft mussile - a claim also denied by Russia. 'Callous disregard'</p>
+        <p>Malaysia pushed for an international tribunal to try those responsible. The move was backed by the Netherlands - which had 196 nationals on board - Ukraine, Belgium and Australia. moscow has blamed the government in Kiev for the disaster. Eleven of the 15 UN Security Council members backed the draft resolution Speaking earlier this month Russian President Vladimir Putin said that the establishment of the tribunal would be "premature" and "counter - productive".</p>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+</body>
+</html>

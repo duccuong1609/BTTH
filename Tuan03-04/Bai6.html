@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6.CSS Căn bản - Dùng CSS lưới</title>
+    <style type="text/css">
+        .container, .row {
+        width: 100%;
+        }
+        .row:before, .row:after {
+        display: table;
+        content: "";
+        }
+        .row:after {
+            clear: both;
+        }
+            
+        .coll, .co12, .co13 {
+            float: left;
+            width:25.333333333%;
+            margin: 1%;
+            padding: 1%;
+        }
+        p{
+            font-weight: bold;
+        }
+        .HomeButtom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="coll">
+                <p>Row 1 Column 1</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ab quo. Tempora ad molestiae perferendis facere quidem sed nostrum, voluptate cumque est inventore culpa amet eveniet expedita a quod deleniti quasi animi maiores dolorem neque possimus. Ipsa ullam rerum recusandae porro mollitia? Iure repellendus asperiores minus dolorem ut iste? Id soluta, eos accusamus assumenda quam itaque, molestiae nostrum officia laudantium tempore rerum! Suscipit officiis nobis ratione dignissimos! Praesentium temporibus quo velit facere optio architecto quisquam amet! Consequuntur et voluptatem repellat, non adipisci necessitatibus natus exercitationem ex aut! Accusantium incidunt tempora sed voluptatibus adipisci rem ipsam. Officiis fuga aut est impedit!
+            </div>
+            <div class="co12">
+                <p>Row 1 - Column 2</p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum repellendus officia veritatis eveniet quo hic! Nisi odit, reprehenderit eaque ipsum error laboriosam iusto atque similique delectus omnis labore ducimus voluptate soluta harum minima mollitia tempore maxime. Nam delectus dicta quae blanditiis, atque minus nesciunt, dolorum, magni dignissimos explicabo repellendus deleniti quia voluptatum id laboriosam quam quos accusamus! Asperiores vero iure ipsum, ad, distinctio expedita id praesentium quia adipisci consequuntur dolorem? Eos enim, quaerat similique perspiciatis consequatur possimus. Eaque iure culpa id expedita et placeat doloribus ea voluptas quidem esse, laboriosam atque voluptatem dolorum ut. Cum beatae et qui inventore optio.
+            </div>
+            <div class="co13">
+                <p>Row 1 Column 3</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, distinctio esse expedita maxime deleniti perspiciatis labore amet impedit soluta odit eligendi illum adipisci, quidem numquam accusantium dolor laborum quis nisi alias, corporis aut! Porro, dicta cumque sint reiciendis quae assumenda dolorum praesentium nulla hic nobis laborum libero! Fuga obcaecati beatae eius nesciunt non sapiente, nisi qui ipsa illum quo natus vero consectetur, laudantium numquam neque maxime cum omnis minima odio. Necessitatibus, quasi. Fugiat sint veritatis odio ipsam perferendis inventore aut laborum quo, accusamus minus? Facilis animi id temporibus. Eius illo saepe voluptatem repudiandae nemo quasi molestiae ab cum eaque cumque.
+            </div>
+        </div>
+        <div class="row">
+            <div class="coll">
+                <p>Row2 - Column 1</p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis amet eligendi illum reprehenderit porro odio et exercitationem itaque quae nihil sed ea tempora molestiae, totam dicta incidunt quos dolores consequatur magni voluptate qui. Obcaecati quasi fuga, nisi perspiciatis modi quam, officiis enim earum pariatur suscipit autem vitae odit vero a. Iste veritatis, alias necessitatibus consequuntur placeat culpa. At facere temporibus, quos fuga autem iste! Quae itaque ut natus, recusandae aspernatur enim inventore qui consequuntur repudiandae quis, et nobis commodi error nostrum esse numquam id, eveniet laudantium libero. Quaerat ex tenetur optio nihil consequuntur excepturi exercitationem quod possimus saepe rerum.
+            </div>
+            <div class="co12">
+                <p>Row2 - Column 2</p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos hic sint nisi dicta architecto earum aspernatur, vero fuga dolores consequatur dolor libero accusamus omnis et quis iste nesciunt laborum similique quia animi nobis a culpa repellendus? Minus numquam enim repellendus facilis eligendi itaque dolor sit aliquam hic aut ad commodi labore at placeat autem, eveniet saepe! Eaque repudiandae eligendi quaerat, blanditiis cum pariatur dolor quibusdam veniam minima aspernatur dignissimos illum doloremque atque vero omnis quo repellat est. Vitae nesciunt et consequatur alias, commodi dolores excepturi fugiat rerum voluptas inventore omnis libero maxime sapiente cupiditate neque deserunt dolor eius harum debitis.
+            </div>
+            <div class="co13">
+                <p>Row2 - Column 3</p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi ullam quam culpa ipsa, laudantium eos rem necessitatibus, corporis officia voluptatem aspernatur repudiandae amet sapiente harum? Amet minima explicabo illum cum deleniti nam, quas sunt ullam? Velit quod esse minima quasi ea sed autem ipsum numquam iure eius dolore, totam recusandae magni non perspiciatis impedit iste officiis. Saepe explicabo error similique cum maiores molestias ut recusandae, accusamus aliquam nihil repellendus exercitationem odio vitae ea? Numquam, sapiente! Facere magnam laboriosam quidem sapiente deserunt! Cupiditate nostrum labore, obcaecati nemo aperiam error velit fugiat perferendis repellat, ducimus molestias, consequuntur explicabo fugit natus at.
+            </div>
+        </div>
+    </div>
+    <div class="HomeButtom">
+        <img src="rsc/Home.png" alt="HomeButtom" usemap="#imagemap1" width="60px" height="60px">
+        <map name="imagemap1">
+            <area shape="circle" coords="54,64,56" href="Index.html">
+        </map>
+    </div>
+</body>
+</html>
